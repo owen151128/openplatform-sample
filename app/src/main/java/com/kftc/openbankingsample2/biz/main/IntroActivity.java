@@ -9,6 +9,7 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
@@ -25,6 +26,7 @@ public class IntroActivity extends AppCompatActivity {
 
     // context
     private Context context;
+    private IntroActivity thisActivity = this;
 
     // view
     // ...
@@ -76,7 +78,7 @@ public class IntroActivity extends AppCompatActivity {
 
                     @Override
                     public void onPermissionDenied(List<String> deniedPermissions) {
-                        finishAffinity();
+                        ActivityCompat.finishAffinity(thisActivity);
                     }
                 })
                 .check();
