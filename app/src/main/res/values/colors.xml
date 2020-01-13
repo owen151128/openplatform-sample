@@ -297,4 +297,6 @@
 
     <color name="colorTansparent">@android:color/transparent</color>
 
+    <color name="main">#3E7EE7</color>
+
 </resources>

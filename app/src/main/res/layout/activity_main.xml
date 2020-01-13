@@ -35,7 +35,8 @@
         android:layout_gravity="end"
         android:layout_marginStart="-65dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-65dp">
 
         <!-- 햄버거 메뉴 컨텐츠 (프레그먼트)-->
         <FrameLayout

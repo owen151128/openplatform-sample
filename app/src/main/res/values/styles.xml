@@ -214,4 +214,9 @@
         <item name="android:background">@drawable/bottom_cancel_button</item>
     </style>
 
+    <!-- 로딩 화면 -->
+    <style name="IntroTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/intro_background</item>
+    </style>
+
 </resources>
