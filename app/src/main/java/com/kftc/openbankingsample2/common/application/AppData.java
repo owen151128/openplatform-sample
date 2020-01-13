@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import androidx.multidex.MultiDex;
 import androidx.preference.PreferenceManager;
 
 import com.kftc.openbankingsample2.R;
@@ -34,6 +35,12 @@ public class AppData extends Application {
     public static String[] scopeInqTranList = {"inquiry", "transfer"};
 
     private static KmProgressBar progressBar;
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+    }
 
     @Override
     public void onCreate() {
